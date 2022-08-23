@@ -1,0 +1,90 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    overflow: hidden;
+    background-color: #141414;
+}
+
+.lauDiv,.numDiv{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#ffffff;
+    transform: translateY(-1.6rem);
+    --sizeVar:12vmin;
+    --neonColor:200,100,255;
+    text-shadow: 0 0 6px rgba(var(--neonColor),0.98), 0 0 30px rgba(var(--neonColor),0.42), 0 0 12px rgba(var(--neonColor),0.58), 0 0 22px rgba(var(--neonColor),0.84), 0 0 38px rgba(var(--neonColor),0.88),0 0 60px rgba(var(--neonColor),1);
+}
+
+.lauDiv{
+    font-size: var(--sizeVar);
+    margin-left: calc(var(--sizeVar) / 10);
+    margin-top: calc(var(--sizeVar) * 1.5);
+    letter-spacing: calc(var(--sizeVar) / 1.75);
+    font-family: 'Courgette', cursive;
+    --neonColor:255,100,255;
+}
+
+.numDiv{
+    font-size: calc(var(--sizeVar) * 1.8);
+    letter-spacing: normal;
+    font-family: 'Courgette', cursive;
+}
+
+.numDiv span{
+    animation: flicker 600ms linear infinite;
+}
+
+.numDiv span:nth-child(2){
+    animation-delay: -200ms;
+    animation-duration: 500ms;
+}
+
+.numDiv span:nth-child(3){
+    animation-delay: -50ms;
+    animation-duration: 700ms;
+}
+
+@keyframes flicker {
+    0%{
+        color:#666;
+        text-shadow: none;
+    }
+
+    5%{
+        color:#666;
+        text-shadow: none;
+    }
+
+    10%{
+        color:#fff;
+        text-shadow: none;
+    }
+
+    15%{
+        color:#fff;
+        text-shadow: inherit;
+    }
+
+    80%{
+        color:#fff;
+        text-shadow: inherit;
+    }
+
+    90%{
+        color: #666;
+        text-shadow: none;
+    }
+
+    100%{
+        color:#666;
+        text-shadow: none;
+    }
+}

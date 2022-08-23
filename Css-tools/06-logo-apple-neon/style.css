@@ -1,0 +1,32 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #111827;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    font-size: 8rem;
+    text-shadow: 0px 0px 100px;
+    animation: animate 2s infinite linear;
+}
+
+@keyframes animate {
+    0%,100%{
+        color:lawngreen;
+    }
+    25%{
+        color: deeppink;
+    }
+    50%{
+        color: deepskyblue;
+    }
+    75%{
+        color: white;
+    }
+}

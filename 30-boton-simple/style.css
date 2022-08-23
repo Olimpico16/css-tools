@@ -1,0 +1,38 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #111827;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15rem;
+}
+
+.btn{
+    position: relative;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    background: transparent;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.btn::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 30%;
+    background: deepskyblue;
+    border-radius: 10px;
+    z-index: -1;
+    transition:0.3s ease;
+}
+
+.btn:hover::after{
+    width: 100%;
+}

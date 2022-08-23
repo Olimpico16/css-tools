@@ -1,0 +1,31 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #111827;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15rem;
+}
+
+.profile-img img{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    animation: float 4s linear infinite;
+}
+
+@keyframes float {
+    0%,100%{
+        box-shadow: 0 5px 15px 0px rgba(255,255,255,0.6);
+        transform: translateY(-20px);
+    }
+
+    50%{
+        box-shadow: 0 25px 15px 0px rgba(255,255,255,0.2);
+        transform: translateY(-20px);
+    }
+}
