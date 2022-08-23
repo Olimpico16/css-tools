@@ -1,0 +1,37 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #111827;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gradient-underline{
+    border: none;
+    background:none;
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    position: relative;
+}
+
+.gradient-underline::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 0;
+    background: linear-gradient(90deg, deepskyblue,deeppink);
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+.gradient-underline:hover::before{
+    width: 100%;
+}
+

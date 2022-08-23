@@ -1,0 +1,26 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    padding-top: 10rem;
+}
+
+body{
+    background-color: #111827;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20rem;
+}
+
+.subscribe{
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    content: 'Suscribirse';
+}

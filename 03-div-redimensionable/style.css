@@ -1,0 +1,24 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #111827;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resizable{
+    height: 5rem;
+    width: 14rem;
+    color: deepskyblue;
+    border: 2px solid deepskyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    resize: auto;
+}
+

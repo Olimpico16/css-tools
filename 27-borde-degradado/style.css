@@ -1,0 +1,26 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #111827;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-img{
+    background: linear-gradient(45deg, #833ab4,#fd1d1d,#fcb045);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.profile-img img{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+}
