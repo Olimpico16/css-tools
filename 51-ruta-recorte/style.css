@@ -1,0 +1,19 @@
+body{
+    background-color: #111827;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15rem;
+}
+
+img{
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%,0% 50%);
+    transition: 0.3s;
+    display: block;
+    margin: 40px auto;
+}
+
+img:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}

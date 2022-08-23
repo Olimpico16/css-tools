@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #111827;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15rem;
+}
+
+.clock{
+    background-color: #141414;
+    padding: 5rem;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+}
